@@ -1,3 +1,60 @@
+# Pastebin Backend API
+
+A Pastebin-like backend service built with NestJS that allows users to
+store text content and retrieve it using a shareable link.
+Pastes can optionally expire based on time or number of views.
+
+## 🚀 Live API
+https://pastebin-backend.onrender.com
+
+## 🛠 Tech Stack
+- NestJS
+- PostgreSQL (Neon)
+- TypeORM
+- Render
+
+## ✨ Features
+- Create paste
+- Retrieve paste by ID
+- Expiration by time
+- Expiration by views
+- UUID-based secure links
+
+## 📦 API Endpoints
+
+### Create Paste
+POST /paste
+
+Request:
+```json
+{
+  "content": "Hello Pastebin",
+  "expiresInMinutes": 10,
+  "maxViews": 2
+}
+Response
+{
+  "id": "ca238299-f5cb-444e-a914-22bc19215446",
+  "url": "https://pastebin-backend.onrender.com/paste/ca238299-f5cb-444e-a914-22bc19215446"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -96,3 +153,16 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+
+
+
+
+
+
+
+
+
+
+
