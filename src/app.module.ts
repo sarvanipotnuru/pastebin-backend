@@ -11,7 +11,7 @@ import { Paste } from './paste/paste.entity';
       type: 'postgres',
       url: process.env.DATABASE_URL,
       entities: [Paste],
-      synchronize: false,
+      synchronize: true,
     }),
     PasteModule,
   ],
